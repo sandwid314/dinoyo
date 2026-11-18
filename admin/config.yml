@@ -1,0 +1,30 @@
+backend:
+  name: turbo-github
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/dinoyo/assets/uploads"
+
+collections:
+  - name: "posts"
+    label: "Postingan"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - label: "Layout"
+        name: "layout"
+        widget: "hidden"
+        default: "post"
+      - label: "Judul"
+        name: "title"
+        widget: "string"
+      - label: "Tanggal"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DD HH:mm:ss ZZ"
+        date_format: "DD-MM-YYYY"
+        time_format: "HH:mm"
+      - label: "Isi"
+        name: "body"
+        widget: "markdown"
