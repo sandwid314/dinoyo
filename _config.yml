@@ -4,7 +4,15 @@ theme: minima
 timezone: Asia/Jakarta
 lang: en-US
 
+header_pages:
+  - categories.html
+
+date_format: "%B %-d, %Y"
+show_excerpts: true
+
 minima:
   skin: dark
+  nav_pages:
+    - categories.html
   date_format: "%B %-d, %Y"
   show_excerpts: true
