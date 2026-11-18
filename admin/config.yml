@@ -24,8 +24,7 @@ collections:
         name: "date"
         widget: "datetime"
         format: "YYYY-MM-DD HH:mm:ss ZZ"
-        date_format: "DD-MM-YYYY"
-        time_format: "HH:mm"
+        picker_utc: false
       - label: "Isi"
         name: "body"
         widget: "markdown"
