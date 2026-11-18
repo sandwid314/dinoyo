@@ -1,4 +1,10 @@
-title: Blog Dinoyo
-description: Dinoyo by Sandy
+title: Dinoyo
+description: by Sandy
 theme: minima
 timezone: Asia/Jakarta
+lang: en-US
+
+minima:
+  skin: dark
+  date_format: "%B %-d, %Y"
+  show_excerpts: true
