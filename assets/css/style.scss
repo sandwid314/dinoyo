@@ -1,1 +1,27 @@
+---
+---
+@import "{{ site.theme }}";
 
+html {
+  color-scheme: dark;
+}
+
+html,
+body {
+  background-color: #111 !important;
+}
+
+body,
+body * {
+  color: #fff !important;
+}
+
+a,
+a:visited,
+a:hover,
+a:focus,
+a:active {
+  color: #fff !important;
+  text-decoration: underline;
+  text-decoration-color: #fff !important;
+}
