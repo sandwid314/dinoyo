@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Judul Tulisan kedua"
-date: 2026-11-17
+date: 2026-11-18
 ---
 
 Tulis isi entri Anda di sini. testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing.
