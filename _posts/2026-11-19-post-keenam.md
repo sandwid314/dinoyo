@@ -1,8 +1,12 @@
 ---
 layout: post
-title: Post keenam
+title: Post keenam - testing testing testing testing testing testing testing
+  testing testingtesting testing testing testing testing testing testing testing
+  testingtesting testing testing testing testing testing testing testing testing
 date: 2026-11-19 11:30:00 +0700
 categories: Algebra
+tags:
+  - Linear Algebra
 ---
 Quadratic equations appear in many areas of mathematics. A quadratic equation has the form
 
