@@ -28,7 +28,7 @@ collections:
         format: "YYYY-MM-DD HH:mm:ss ZZ"
         picker_utc: false
 
-      - label: "Category"
+      - label: "Categories"
         name: "categories"
         widget: "select"
         required: false
