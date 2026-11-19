@@ -39,7 +39,9 @@ layout: default
       <p class="post-tags">
         <strong>Tags:</strong>
         {%- for tag in page.tags %}
-          <span>{{ tag | escape }}</span>{% unless forloop.last %}, {% endunless %}
+          <a href="{{ '/tags/' | relative_url }}#{{ tag | slugify }}">
+            {{ tag | escape }}
+          </a>{% unless forloop.last %}, {% endunless %}
         {%- endfor %}
       </p>
     {%- endif -%}
