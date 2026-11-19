@@ -6,23 +6,27 @@ permalink: /categories/
 
 <nav aria-label="Categories">
   <ul>
-    <li><a href="#algebra">Algebra</a></li>
-    <li><a href="#trigonometry">Trigonometry</a></li>
-    <li><a href="#geometry">Geometry</a></li>
-    <li><a href="#calculus">Calculus</a></li>
+    {% for category in site.data.categories %}
+      <li>
+        <a href="#{{ category | slugify }}">{{ category }}</a>
+      </li>
+    {% endfor %}
   </ul>
 </nav>
 
-{% assign category_names = "Algebra,Trigonometry,Geometry,Calculus" | split: "," %}
-
-{% for category in category_names %}
+{% for category in site.data.categories %}
   <section id="{{ category | slugify }}">
     <h2>{{ category }}</h2>
+
     {% assign category_posts = site.categories[category] %}
     {% if category_posts and category_posts.size > 0 %}
       <ul>
         {% for post in category_posts %}
-          <li><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></li>
+          <li>
+            <a href="{{ post.url | relative_url }}">
+              {{ post.title | escape }}
+            </a>
+          </li>
         {% endfor %}
       </ul>
     {% else %}
