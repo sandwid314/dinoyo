@@ -2,7 +2,7 @@
 layout: post
 title: Posting kelima
 date: 2026-11-19 02:09:00 +0700
-categories: Geometry
+categories: Algebra
 tags:
   - Project Euler
   - Algebra
