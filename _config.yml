@@ -4,10 +4,8 @@ theme: minima
 timezone: Asia/Jakarta
 lang: en-US
 
-date_format: "%B %-d, %Y"
 show_excerpts: true
 
 minima:
   skin: dark
   date_format: "%B %-d, %Y"
-  show_excerpts: true
