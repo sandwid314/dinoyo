@@ -42,4 +42,12 @@ def solve_quadratic(a, b, c):
 
 solutions = solve_quadratic(1, -5, 6)
 print(solutions)
+```
 
+The output is `(3.0, 2.0)`. This means that the equation
+
+$$
+x^2 - 5x + 6 = 0
+$$
+
+has two solutions: $x = 3$ and $x = 2$. Substituting either value into the equation makes the left-hand side equal to zero.
