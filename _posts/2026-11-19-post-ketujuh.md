@@ -3,6 +3,8 @@ layout: post
 title: Post keTujuh
 date: 2026-11-19 12:10:00 +0700
 categories: Algebra
+tags:
+  - Linear Algebra
 ---
 Quadratic equations appear in many areas of mathematics. A quadratic equation has the form
 
