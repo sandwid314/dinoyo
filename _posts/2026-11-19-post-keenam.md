@@ -3,31 +3,43 @@ layout: post
 title: Post keenam
 date: 2026-11-19 11:30:00 +0700
 ---
-This post shows a formula rendered with MathJax and a short Python example.
-
-The quadratic formula solves equations of the form $ax^2 + bx + c = 0$:
+Quadratic equations appear in many areas of mathematics. A quadratic equation has the form
 
 $$
-x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+ax^2 + bx + c = 0,
 $$
 
-This Python function calculates the two real solutions:
+where $a$, $b$, and $c$ are constants, and $a \ne 0$.
+
+## The quadratic formula
+
+The solutions can be found with the quadratic formula:
+
+$$
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}.
+$$
+
+The expression under the square root, $b^2 - 4ac$, is called the **discriminant**. If it is negative, the equation has no real solutions.
+
+## A Python example
+
+The function below calculates the real solutions. It returns `None` when there are no real solutions.
 
 ```python
 import math
 
 def solve_quadratic(a, b, c):
-    d = b**2 - 4*a*c
+    discriminant = b**2 - 4*a*c
 
-    if d < 0:
-        return "No real solutions"
+    if discriminant < 0:
+        return None
 
-    return (
-        (-b + math.sqrt(d)) / (2*a),
-        (-b - math.sqrt(d)) / (2*a)
-    )
+    first = (-b + math.sqrt(discriminant)) / (2*a)
+    second = (-b - math.sqrt(discriminant)) / (2*a)
 
-print(solve_quadratic(1, -5, 6))
+    return first, second
 
 
-Gunakan kolom **Date** di Decap untuk tanggal post. Setelah menyimpan dan menerbitkan, rumus akan dirender MathJax dan kode Python tampil sebagai blok kode.
+solutions = solve_quadratic(1, -5, 6)
+print(solutions)
+
