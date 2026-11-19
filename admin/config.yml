@@ -17,14 +17,27 @@ collections:
         name: "layout"
         widget: "hidden"
         default: "post"
+
       - label: "Judul"
         name: "title"
         widget: "string"
+
       - label: "Tanggal"
         name: "date"
         widget: "datetime"
         format: "YYYY-MM-DD HH:mm:ss ZZ"
         picker_utc: false
+
+      - label: "Category"
+        name: "categories"
+        widget: "select"
+        required: false
+        options:
+          - "Algebra"
+          - "Trigonometry"
+          - "Geometry"
+          - "Calculus"
+
       - label: "Isi"
         name: "body"
         widget: "markdown"
