@@ -5,13 +5,11 @@ permalink: /tags/
 ---
 
 <nav aria-label="Tags">
-  <ul>
+  <p>
     {% for tag in site.tags %}
-      <li>
-        <a href="#{{ tag[0] | slugify }}">{{ tag[0] | escape }}</a>
-      </li>
+      <a href="#{{ tag[0] | slugify }}">{{ tag[0] | escape }}</a>{% unless forloop.last %}, {% endunless %}
     {% endfor %}
-  </ul>
+  </p>
 </nav>
 
 {% for tag in site.tags %}
