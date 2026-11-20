@@ -3,12 +3,3 @@ layout: page
 title: Tags
 permalink: /tags/
 ---
-
-{% for tag in site.tags %}
-  <p id="{{ tag[0] | slugify }}">
-    <strong>{{ tag[0] | escape }}:</strong>
-    {% for post in tag[1] %}
-      <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>{% unless forloop.last %}, {% endunless %}
-    {% endfor %}
-  </p>
-{% endfor %}
