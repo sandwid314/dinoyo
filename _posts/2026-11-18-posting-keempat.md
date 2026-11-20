@@ -8,7 +8,7 @@ tags:
 ---
 Okay testing
 
-![](/assets/uploads/testimage.png)
+![]()
 
 Testing posting ke empat Testing posting ke empat Testing posting ke empat Testing posting ke empat Testing posting ke empat Testing posting ke empat Testing posting ke empat Testing posting ke empat Testing posting ke empat Testing posting ke empat Testing posting ke empat Testing posting ke empat Testing posting ke empat Testing posting ke empat Testing posting ke empat Testing posting ke empat Testing posting ke empat Testing posting ke empat Testing posting ke empat.
 
