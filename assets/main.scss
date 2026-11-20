@@ -1,5 +1,6 @@
 ---
 ---
+
 @import "minima";
 
 html,
@@ -26,8 +27,16 @@ a:active {
   max-width: 1100px;
 }
 
-.site-header .wrapper {
+.site-header .wrapper.header-layout {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
   padding-top: 24px;
+}
+
+.site-branding {
+  min-width: 0;
 }
 
 .site-header .site-title {
@@ -41,6 +50,19 @@ a:active {
   margin: 0 0 12px;
   color: #fff;
   font-size: 16px;
+}
+
+.header-links {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 18px;
+  margin-left: auto;
+}
+
+.header-links a {
+  color: #fff;
+  font-size: 14px;
 }
 
 .home {
@@ -111,6 +133,16 @@ pre {
 }
 
 @media screen and (max-width: 600px) {
+  .site-header .wrapper.header-layout {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .header-links {
+    margin-left: 0;
+  }
+
   .home {
     display: block;
   }
