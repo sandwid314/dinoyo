@@ -46,3 +46,6 @@ collections:
       - label: "Isi"
         name: "body"
         widget: "markdown"
+        editor_components:
+          - image
+          - code-block
