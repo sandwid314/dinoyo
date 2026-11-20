@@ -1,12 +1,10 @@
 title: Dinoyo
 description: by Sandy Widianto
+url: "https://dinoyo.id"
+baseurl: ""
 theme: minima
 timezone: Asia/Jakarta
 lang: en-US
-
-header_pages:
-  - tags.html
-  - categories.html
 
 show_excerpts: true
 
