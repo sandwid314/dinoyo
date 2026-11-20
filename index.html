@@ -3,15 +3,8 @@ layout: home
 ---
 
 <aside class="post-sidebar">
-  <h2>
-    <a href="{{ '/categories/' | relative_url }}">Categories</a>
-  </h2>
-
-  <h2>
-    <a href="{{ '/tags/' | relative_url }}">Tags</a>
-  </h2>
-
   <h2>Recent Posts</h2>
+
   <ul>
     {% for post in site.posts limit: 10 %}
       <li>
