@@ -1,7 +1,6 @@
 ---
 layout: post
-title: Post keTujuh -testing testing testing testing testing testing testing
-  testing testing
+title: Post keTujuh
 date: 2026-11-19 12:10:00 +0700
 categories: Algebra
 tags:
@@ -53,5 +52,7 @@ The output is `(3.0, 2.0)`. This means that the equation
 $$
 x^2 - 5x + 6 = 0
 $$
+
+![](/assets/uploads/testimage.png)
 
 has two solutions: $x = 3$ and $x = 2$. Substituting either value into the equation makes the left-hand side equal to zero.
