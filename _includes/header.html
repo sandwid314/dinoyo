@@ -1,9 +1,16 @@
 <header class="site-header" role="banner">
-  <div class="wrapper">
-    <a class="site-title" href="{{ '/' | relative_url }}">
-      {{ site.title | escape }}
-    </a>
+  <div class="wrapper header-layout">
+    <div class="site-branding">
+      <a class="site-title" href="{{ '/' | relative_url }}">
+        {{ site.title | escape }}
+      </a>
 
-    <p class="site-tagline">Algebra to Calculus with Python</p>
+      <p class="site-tagline">Algebra to Calculus with Python</p>
+    </div>
+
+    <nav class="header-links" aria-label="Main navigation">
+      <a href="{{ '/tags/' | relative_url }}">Tags</a>
+      <a href="{{ '/categories/' | relative_url }}">Categories</a>
+    </nav>
   </div>
 </header>
